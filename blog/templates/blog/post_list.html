@@ -3,20 +3,16 @@
         <title>Sarp Yokuş Blog</title>
     </head>
     <body>
-        <div>
-            <h1><a href="">Sarp Yokuş Blog</a></h1>
-        </div>
+      <div>
+          <h1><a href="/">SarpYokuş</a></h1>
+    </div>
 
-        <div>
-            <p>published: 02.11.2017, 12:14</p>
-            <h2><a href="">İstiklal Marşı</a></h2>
-            <p>Korkma sönmez bu şafaklarda yüzen al sancak. </p>
-        </div>
-
-        <div>
-            <p>published: 02.11.2017, 12:20</p>
-            <h2><a href="">İkinci gönderim</a></h2>
-            <p>Bir varmış bir yokmuş, evvel zaman içinde tıngır mıngır sallar iken.</p>
-        </div>
+{% for post in posts %}
+  <div>
+      <p>published: {{ post.yayinlama_tarihi }}</p>
+      <h1><a href="">{{ post.baslik }}</a></h1>
+      <p>{{ post.yazi|linebreaks }}</p>
+  </div>
+{% endfor %}
     </body>
 </html>
