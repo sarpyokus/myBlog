@@ -25,7 +25,7 @@ SECRET_KEY = 'p=roa9sr@4w+o&42ndw8k@%qtczahjq9dq-!8j1^12gy%pov*c'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sarpyokus.pythonanywhere.com']
 
 
 # Application definition
